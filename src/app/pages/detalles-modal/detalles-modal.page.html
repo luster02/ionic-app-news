@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="backspace"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Detils</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card" >
+    <img src="{{noticeInput.image}}" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>{{noticeInput.category}}</ion-card-subtitle>
+      <ion-card-title>{{noticeInput.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="ion-text-justify">
+          {{noticeInput.content}}
+      </div>
+    </ion-card-content>
+    <div class="ion-text-center">
+        <ion-icon name="contact"></ion-icon>  {{noticeInput.author}}
+    </div>
+    <br>
+  </ion-card>
+</ion-content>

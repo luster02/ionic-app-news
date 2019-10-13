@@ -1,9 +1,52 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Admin Notices
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <form (ngSubmit)="sendForm(f)" #f="ngForm">
+        <ion-list>
+          <ion-item>
+            <ion-label  position="floating">Title of notice</ion-label>
+            <ion-input name="title" [(ngModel)]="notice.title" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label  position="floating">Content of notice</ion-label>
+            <ion-textarea name="content" [(ngModel)]="notice.content" required></ion-textarea>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">short description of notice</ion-label>
+            <ion-input name="description" [(ngModel)]="notice.description" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Url image of notice</ion-label>
+            <ion-input name="image" [(ngModel)]="notice.image" required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Author of notice</ion-label>
+              <ion-input name="author" [(ngModel)]="notice.author" required></ion-input>
+            </ion-item>
+          <ion-item>
+            <ion-label>Category</ion-label>
+            <ion-select value="tips" okText="Okay" cancelText="Dismiss" name="category" [(ngModel)]="notice.category" required>
+              <ion-select-option value="food">Food</ion-select-option>
+              <ion-select-option value="fitness">Fitness</ion-select-option>
+              <ion-select-option value="sports">Sports</ion-select-option>
+              <ion-select-option value="tips">Tips</ion-select-option>
+              <ion-select-option value="health">Helath</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <br>
+          <ion-button type="submit" expand="block">
+            send
+          </ion-button>
+        </ion-list>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
