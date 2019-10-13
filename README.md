@@ -6,8 +6,11 @@
 5. Ionic serve or ionic serve --devapp to test.
 6. Ionic build to production.
 
-
+<p align="center">
+  
 <img src="https://github.com/luster02/ionic-app-news/blob/master/docs/Screenshot_20191012-202222.png" width="250">
 <img src="https://github.com/luster02/ionic-app-news/blob/master/docs/Screenshot_20191012-202236.png" width="250">
 <img src="https://github.com/luster02/ionic-app-news/blob/master/docs/Screenshot_20191012-202246.png" width="250">
 <img src="https://github.com/luster02/ionic-app-news/blob/master/docs/Screenshot_20191012-202302.png" width="250">
+
+</p>  
