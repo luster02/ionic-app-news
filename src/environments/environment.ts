@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDjslWfPFZf4z7tDaRyUWhFS4Am5PfXCWo",
-    authDomain: "medic-app-e5ecf.firebaseapp.com",
-    databaseURL: "https://medic-app-e5ecf.firebaseio.com",
-    projectId: "medic-app-e5ecf",
-    storageBucket: "medic-app-e5ecf.appspot.com",
-    messagingSenderId: "730033804087",
-    appId: "1:730033804087:web:4a6be75c74cd3fd72380b2",
-    measurementId: "G-020Y5NZ7EF"
+    'your apis keys'
   }
 };
 
